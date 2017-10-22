@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Fancybox: увеличение изображений с возможностью переключения между ними.</title>
+  <!-- Add jQuery library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="../lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="../source/jquery.fancybox.js%3Fv=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="../source/jquery.fancybox.css%3Fv=2.1.5.css" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-buttons.css%3Fv=1.0.5.css" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-buttons.js%3Fv=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="../source/helpers/jquery.fancybox-thumbs.css%3Fv=1.0.7.css" />
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-thumbs.js%3Fv=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="../source/helpers/jquery.fancybox-media.js%3Fv=1.0.6"></script>
+ </head>
+ <body>
+    <script>
+        $(document).ready(function() {
+        	$(".fancybox").fancybox({
+        		openEffect	: 'none',
+        		closeEffect	: 'none'
+        	});
+        });
+    </script>
+    <style>
+        div#main{
+            width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        a{display: inline-block;}
+    </style>
+  <div id="main">
+  <h1>Fancybox: Movies</h1>
+    <h2>I</h2>
+    <a class="fancybox" rel="gallery1" href="#" title="4rooms.jpg">
+    	<img src="4rooms.jpg" alt="" />
+    </a>
+    <a class="fancybox" rel="gallery1" href="#" title="99-francs-movie-poster-2007-1020414460.jpg">
+    	<img src="99-francs-movie-poster-2007-1020414460.jpg" alt="" />
+    </a>
+    <a class="fancybox" rel="gallery1" href="#" title="devils-advocate.jpg">
+    	<img src="devils-advocate.jpg" alt="" />
+    </a>
+    <a class="fancybox" rel="gallery1" href="#" title="DobermannPoster.jpg ♥">
+    	<img src="DobermannPoster.jpg" alt="" />
+    </a>
+    
+    <h2>II</h2>
+    <a class="fancybox" rel="gallery2" href="#" title="Две украиночки">
+    	<img src="1_ua-s.jpg" alt="" />
+    </a>
+    <a class="fancybox" rel="gallery2" href="#" title="Наталка полтавка">
+    	<img src="2_ua-s.jpg" alt="" />
+    </a>
+    <a class="fancybox" rel="gallery2" href="#" title="Степная царица">
+    	<img src="3_ua-s.jpg" alt="" />
+    </a>
+    <a class="fancybox" rel="gallery2" href="#" title="Екатерина ♥">
+    	<img src="4_ua-s.jpg" alt="" />
+    </a>
+  </div>
+ </body>
+</html>
